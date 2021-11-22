@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Edit Profile Page</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="title">
+      Edit Profile
+    </div>
+    <div class="form">
+        <div class="upload_pic">
+          <img src="images/profile.jpg" id="photo">
+          <input type="file" id="file">
+          <label for="file" id="uploadBtn">Choose Photo</label>
+      </div>
+      
+
+<script src="app.js"></script>
+
+       <div class="inputfield">
+          <label>Name</label>
+          <input type="text" class="input">
+       </div>  
+        <div class="inputfield">
+          <label>Email</label>
+          <input type="text" class="input">
+       </div>  
+       <div class="inputfield">
+          <label>Mobile Number</label>
+          <input type="password" class="input">
+       </div>  
+        <div class="inputfield">
+          <label>Occupation</label>
+          <div class="custom_select">
+            <select>
+              <option selected disabled>Select</option>
+              <option value="frontend">Front-End Developer</option>
+              <option value="backend">Back-End Developer</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+       </div> 
+
+
+
+       <div class="inputfield">
+         <label >Address</label>
+         <textarea class="textarea"></textarea>
+       </div>
+
+       <div class="inputfield">
+           <label>Gender</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">MALE</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">FEMALE</label><br>
+       </div>
+
+            <label class="switch">
+              <input type="checkbox" id="togBtn">
+              <div class="slider round"></div>
+              </label>
+           
+       
+     
+      <div class="inputfield">
+        <input type="submit" value="Update" class="btnupdate" onclick="msgFunction()">
+        <a href="allData.html" class="btncancel">Cancel</a>
+      </div>
+    </div>
+</div>	
+
+<script>
+  function msgFunction() {
+    confirm("Are you sure you want to update?");
+  }
+  </script>
+	
+</body>
+</html>
